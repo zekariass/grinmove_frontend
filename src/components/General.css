@@ -1,0 +1,320 @@
+/* This css file contains general css selectors that can be used throughout the application */
+
+/* @import url("https://fonts.googleapis.com/css2?family=lobster:wght@100;400&display=swap");
+
+body,
+html {
+  font-family: "lobster";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+} */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.01rem;
+  line-height: 1.571rem;
+  color: #273656;
+  background-color: #fff;
+}
+
+.bg-general {
+  background-color: rgb(205, 226, 205) !important;
+}
+
+.bg-grin {
+  background-color: rgb(128, 209, 96) !important;
+}
+
+.grin-color {
+  color: rgb(128, 209, 96) !important;
+}
+
+.link-general {
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  color: rgb(65, 168, 24) !important;
+  text-decoration: none !important;
+}
+
+.link-general-danger {
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  color: brown !important;
+  text-decoration: none !important;
+}
+.link-general-danger:hover {
+  color: rgb(105, 20, 20) !important;
+}
+
+.link-size-normal {
+  font-size: 1rem !important;
+}
+
+.link-size-small {
+  font-size: 0.9rem !important;
+}
+
+.link-size-xsmall {
+  font-size: 0.8rem !important;
+}
+
+.link-hover:hover {
+  text-decoration: underline !important;
+}
+
+.link-underline {
+  text-decoration: underline !important;
+}
+
+.dropdown-item-general {
+  font-size: 0.9rem !important;
+  font-weight: bold !important;
+  color: rgb(65, 168, 24) !important;
+  text-decoration: none !important;
+}
+
+.btn-general {
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  background-color: rgb(65, 168, 24) !important;
+  border-radius: 5px;
+  border-color: rgb(65, 168, 24) !important;
+  color: white;
+}
+.btn-general-danger {
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  background-color: brown !important;
+  border-radius: 5px;
+  border-color: brown !important;
+  color: white;
+}
+
+.btn-general-danger:hover {
+  background-color: rgb(119, 24, 24) !important;
+  border-color: rgb(119, 24, 24) !important;
+}
+
+.btn-general-info {
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  background-color: rgb(72, 205, 249) !important;
+  border-radius: 5px;
+  border-color: lightblue !important;
+  color: white;
+}
+.btn-general-info:hover {
+  background-color: rgb(48, 143, 175) !important;
+  border-color: rgb(72, 205, 249) !important;
+}
+
+.btn-general-outline {
+  font-size: 1rem !important;
+  font-weight: bolder !important;
+  background-color: rgb(246, 249, 244) !important;
+  border-radius: 5px;
+  border-color: rgb(65, 168, 24) !important;
+  color: rgb(20, 2, 45);
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn-general-outline:hover {
+  background-color: rgb(65, 168, 24) !important;
+  color: white;
+}
+
+.btn-general:hover {
+  background-color: rgb(52, 103, 31) !important;
+  border-color: rgb(52, 103, 31) !important;
+}
+
+.link-general:hover {
+  color: rgb(52, 103, 31) !important;
+  /* color: rgb(9, 122, 220) */
+}
+
+.flex-center-general {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+@media (max-width: 576px) {
+  .flex-center-general-sm {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+.flex-start-general {
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+
+.flex-end-general {
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: flex-end !important;
+}
+
+.card-table {
+  display: table !important;
+}
+
+.card-cell {
+  display: table-cell !important;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  margin-top: 10px;
+}
+
+.error-general {
+  color: brown;
+  font-weight: bold;
+}
+
+/* Jumbotron */
+.jumbotron-general {
+  background-color: rgb(205, 226, 205);
+}
+
+/* Jumbotron */
+.jumbotron-general-strong {
+  background-color: rgb(181, 214, 181);
+}
+
+/* Footer */
+.footer-bg {
+  background-color: #eee;
+}
+
+/* Other */
+.other-bg {
+  background-color: #eee;
+}
+
+.cuttor {
+  color: brown;
+  cursor: pointer;
+}
+
+.cuttor:hover {
+  color: rgb(103, 16, 16);
+}
+
+.input-border-color {
+  border: 1px solid rgb(65, 168, 24);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.delete-general {
+  color: brown;
+}
+
+.delete-general:hover {
+  color: rgb(101, 15, 15);
+}
+
+.view-general {
+  color: rgb(14, 14, 114);
+}
+
+.view-general:hover {
+  color: rgb(90, 90, 208);
+}
+
+.upload-general {
+  color: rgb(65, 168, 24);
+}
+
+.upload-general:hover {
+  color: rgb(32, 87, 10);
+}
+
+.my-modal-header,
+.my-modal-body,
+.my-modal-footer {
+  /* width: 100vw !important ; */
+  /* height: 90vw !important; */
+  background-color: rgb(214, 211, 211);
+}
+
+/* PICTURE UPLOAD */
+.picture-list-container {
+  border: 5px solid rgb(136, 181, 136);
+  border-radius: 5px;
+}
+
+/* DATA DISPLAY */
+.display-title {
+  color: brown;
+}
+
+.display-bg {
+  background-color: brown;
+}
+
+/* IMAGE GALLERY */
+.gallery-slider-active-div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.gallery-slider-active-img {
+  border: 3px solid rgb(65, 168, 24);
+}
+
+.gallery-slider {
+  width: 100%;
+  height: 250px;
+}
+.gallery-slider-div {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .gallery-slider-div {
+    width: 85%;
+  }
+}
+
+.gallery-slider-icon {
+  color: rgb(65, 168, 24);
+  cursor: pointer;
+}
+.gallery-slider-icon:hover {
+  color: rgb(32, 88, 9);
+}
+
+.dropdown-scrollable {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+/* PAGINATION */
+.page-item.active .page-link {
+  color: #fff !important;
+  background-color: rgb(128, 209, 96) !important;
+  border-color: rgb(71, 144, 47) !important;
+  cursor: pointer;
+}
+
+.page-item.active .page-link:hover {
+  background-color: rgb(83, 162, 51) !important;
+}
+
+.image-display {
+  border-radius: 5px !important;
+}
