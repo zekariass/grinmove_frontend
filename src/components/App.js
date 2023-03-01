@@ -12,6 +12,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import ProtectedRoute from "./commons/ProtectedRoute";
 import {
+  PATH_ABOUT,
   PATH_ADD_PROPERTY,
   PATH_AGENTS_ADD,
   PATH_AGENTS_HOME,
@@ -175,6 +176,7 @@ import FeatureListing from "./agents/dashboard/listings/FeatureListing";
 import ContactAgent from "./listing_page/ContactAgent";
 import ListingImageView from "./listing_page/public_listing_detail/ListingImageView";
 import ListingVideoView from "./listing_page/public_listing_detail/ListingVideoView";
+import About from "./commons/About";
 
 const App = () => {
   const isSignedIn = useSelector((store) => store.user.signin.isSignedIn);
@@ -551,6 +553,7 @@ const App = () => {
             element={<PropertyFileUpload />}
           />
         </Route>
+        <Route path={PATH_ABOUT} element={<About />} />
       </Routes>
     </BrowserRouter>
   );

@@ -39,6 +39,9 @@ export const PATH_ADD_PROPERTY = "/list-your-property";
 export const PATH_LANDING = "/";
 export const PATH_PAGE_NOT_FOUND = "*";
 
+//ABOUT
+export const PATH_ABOUT = "/about";
+
 //AGENTs
 export const PATH_AGENTS_HOME = "/agents";
 export const PATH_AGENTS_SEARCH = "search";

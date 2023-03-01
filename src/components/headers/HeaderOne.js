@@ -7,6 +7,7 @@ import "./HeaderOne.css";
 import MenuDropdown from "./MenuDropdown";
 import { useDispatch, useSelector } from "react-redux";
 import {
+  PATH_ABOUT,
   PATH_AGENTS_SEARCH_ABSOLUTE,
   PATH_AGENT_CREATE_INFO_ABSOLUTE,
   PATH_AGENT_DASHBOARD,
@@ -213,6 +214,12 @@ const HeaderOne = () => {
             className="link-general link-size-small"
           >
             Find an Agent
+          </NavLink>
+          <NavLink
+            to={PATH_ABOUT}
+            className="link-general link-size-small mx-lg-5"
+          >
+            About
           </NavLink>
         </Nav>
         {getMenuByAuthStatus()}
