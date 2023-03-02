@@ -219,7 +219,7 @@ const HeaderOne = () => {
             to={PATH_ABOUT}
             className="link-general link-size-small mx-lg-5"
           >
-            About
+            About Me
           </NavLink>
         </Nav>
         {getMenuByAuthStatus()}

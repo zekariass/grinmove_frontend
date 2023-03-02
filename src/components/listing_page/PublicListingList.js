@@ -133,7 +133,7 @@ const PublicListingList = () => {
         </div>
         <div className="row p-md-4 p-1 mx-md-4">
           <div
-            className="col-md-8 bg- rounded-3 px-4"
+            className="col-xl-8 bg- rounded-3 px-4"
             style={{ backgroundColor: "#fff" }}
           >
             <div className="my-3">
@@ -147,7 +147,7 @@ const PublicListingList = () => {
               <div className="mb-3">
                 <ListingGrid
                   publicListings={publicListings}
-                  gridClassName="row row-cols-1 row-cols-xl-2 g-3"
+                  gridClassName="row g-3"
                   page="publicListingList"
                 />
               </div>
@@ -177,7 +177,7 @@ const PublicListingList = () => {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-xl-4 d-none d-xl-block">
             <ListingListLayout />
           </div>
         </div>

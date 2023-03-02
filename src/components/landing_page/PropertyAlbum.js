@@ -189,9 +189,13 @@ const PropertyAlbum = () => {
   return (
     <div className="container my-5">
       <p className="fs-5">Choose properties by category</p>
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-3">
-        <div className="col">
-          <Card className="shadow">
+      <div className="row  g-3">
+        <div className="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+          <Card
+            className="shadow h-100"
+            onClick={() => onLinkClick(APARTMENT_KEY)}
+            role="button"
+          >
             {displayCardImageLoadingSpinner(getApartmentAsset)}
             <Card.Body>
               <p className="flex-center-general fs-5">Apartments</p>
@@ -201,19 +205,19 @@ const PropertyAlbum = () => {
             </Card.Body>
             <Card.Footer>
               <div className="flex-center-general">
-                <div
-                  className="link-general link-size-small px-3 py-2"
-                  role="button"
-                  onClick={() => onLinkClick(APARTMENT_KEY)}
-                >
+                <div className="link-general link-size-small px-3 py-2">
                   Find Apartments
                 </div>
               </div>
             </Card.Footer>
           </Card>
         </div>
-        <div className="col">
-          <Card className="shadow">
+        <div className="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+          <Card
+            className="shadow h-100"
+            role="button"
+            onClick={() => onLinkClick(VILLA_KEY)}
+          >
             {displayCardImageLoadingSpinner(getVillaAsset)}
 
             <Card.Body>
@@ -224,19 +228,19 @@ const PropertyAlbum = () => {
             </Card.Body>
             <Card.Footer>
               <div className="flex-center-general">
-                <div
-                  className="link-general link-size-small px-3 py-2"
-                  role="button"
-                  onClick={() => onLinkClick(VILLA_KEY)}
-                >
+                <div className="link-general link-size-small px-3 py-2">
                   Find Villas
                 </div>
               </div>
             </Card.Footer>
           </Card>
         </div>
-        <div className="col card-table">
-          <Card className="shadow">
+        <div className="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+          <Card
+            className="shadow h-100"
+            role="button"
+            onClick={() => onLinkClick(CONDOMINIUM_KEY)}
+          >
             {displayCardImageLoadingSpinner(getCondominiumAsset)}
 
             <Card.Body>
@@ -247,19 +251,19 @@ const PropertyAlbum = () => {
             </Card.Body>
             <Card.Footer>
               <div className="flex-center-general ">
-                <div
-                  className="link-general link-size-small px-3 py-2"
-                  role="button"
-                  onClick={() => onLinkClick(CONDOMINIUM_KEY)}
-                >
+                <div className="link-general link-size-small px-3 py-2">
                   Find Condominiums
                 </div>
               </div>
             </Card.Footer>
           </Card>
         </div>
-        <div>
-          <Card className="shadow">
+        <div className="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+          <Card
+            className="shadow h-100"
+            role="button"
+            onClick={() => onLinkClick(TRADITIONAL_HOUSE_KEY)}
+          >
             {displayCardImageLoadingSpinner(getTraditionalHouseAsset)}
 
             <Card.Body>
@@ -270,19 +274,19 @@ const PropertyAlbum = () => {
             </Card.Body>
             <Card.Footer>
               <div className="flex-center-general">
-                <div
-                  className="link-general link-size-small px-3 py-2"
-                  role="button"
-                  onClick={() => onLinkClick(TRADITIONAL_HOUSE_KEY)}
-                >
+                <div className="link-general link-size-small px-3 py-2">
                   Find Traditional Properties
                 </div>
               </div>
             </Card.Footer>
           </Card>
         </div>
-        <div className="col">
-          <Card className="shadow">
+        <div className="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+          <Card
+            className="shadow h-100"
+            role="button"
+            onClick={() => onLinkClick(SHARE_HOUSE_KEY)}
+          >
             {displayCardImageLoadingSpinner(getShareHouseAsset)}
 
             <Card.Body>
@@ -293,19 +297,19 @@ const PropertyAlbum = () => {
             </Card.Body>
             <Card.Footer>
               <div className="flex-center-general">
-                <div
-                  className="link-general link-size-small px-3 py-2"
-                  role="button"
-                  onClick={() => onLinkClick(SHARE_HOUSE_KEY)}
-                >
+                <div className="link-general link-size-small px-3 py-2">
                   Find Share Houses
                 </div>
               </div>
             </Card.Footer>
           </Card>
         </div>
-        <div className="col">
-          <Card className="shadow">
+        <div className="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+          <Card
+            className="shadow h-100"
+            role="button"
+            onClick={() => onLinkClick(OFFICE_KEY)}
+          >
             {displayCardImageLoadingSpinner(getOfficeAsset)}
 
             <Card.Body>
@@ -316,19 +320,19 @@ const PropertyAlbum = () => {
             </Card.Body>
             <Card.Footer>
               <div className="flex-center-general">
-                <div
-                  className="link-general link-size-small px-3 py-2"
-                  role="button"
-                  onClick={() => onLinkClick(OFFICE_KEY)}
-                >
+                <div className="link-general link-size-small px-3 py-2">
                   Find Offices
                 </div>
               </div>
             </Card.Footer>
           </Card>
         </div>
-        <div className="col">
-          <Card className="shadow">
+        <div className="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+          <Card
+            className="shadow h-100"
+            role="button"
+            onClick={() => onLinkClick(COMMERCIAL_PROPERTY_KEY)}
+          >
             {displayCardImageLoadingSpinner(getCommercialPropertyAsset)}
 
             <Card.Body>
@@ -339,19 +343,19 @@ const PropertyAlbum = () => {
             </Card.Body>
             <Card.Footer>
               <div className="flex-center-general">
-                <div
-                  className="link-general link-size-small px-3 py-2"
-                  role="button"
-                  onClick={() => onLinkClick(COMMERCIAL_PROPERTY_KEY)}
-                >
+                <div className="link-general link-size-small px-3 py-2">
                   Find Commercial Properties
                 </div>
               </div>
             </Card.Footer>
           </Card>
         </div>
-        <div className="col">
-          <Card className="shadow">
+        <div className="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+          <Card
+            className="shadow h-100"
+            role="button"
+            onClick={() => onLinkClick(HALL_KEY)}
+          >
             {displayCardImageLoadingSpinner(getHallAsset)}
 
             <Card.Body>
@@ -362,42 +366,44 @@ const PropertyAlbum = () => {
             </Card.Body>
             <Card.Footer>
               <div className="flex-center-general">
-                <div
-                  className="link-general link-size-small px-3 py-2"
-                  role="button"
-                  onClick={() => onLinkClick(HALL_KEY)}
-                >
+                <div className="link-general link-size-small px-3 py-2">
                   Find Halls
                 </div>
               </div>
             </Card.Footer>
           </Card>
         </div>
-        <div className="col">
-          <Card className="shadow">
+        <div className="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+          <Card
+            className="shadow h-100"
+            role="button"
+            onClick={() => onLinkClick(ALL_PURPOSE_PROPERTY_KEY)}
+          >
             {displayCardImageLoadingSpinner(getAllPurposePropertyAsset)}
 
             <Card.Body>
-              <p className="flex-center-general fs-5">All Purpose Properties</p>
+              <p className="flex-center-general fs-5">
+                Multi Purpose Properties
+              </p>
               <p className="card-text flex-center-general">
-                Find All Purpose Properties around your area for rent or sale.
+                Find Multi Purpose Properties around your area for rent or sale.
               </p>
             </Card.Body>
             <Card.Footer>
               <div className="flex-center-general">
-                <div
-                  className="link-general link-size-small px-3 py-2"
-                  role="button"
-                  onClick={() => onLinkClick(ALL_PURPOSE_PROPERTY_KEY)}
-                >
-                  Find All Purpose Properties
+                <div className="link-general link-size-small px-3 py-2">
+                  Find Multi Purpose Properties
                 </div>
               </div>
             </Card.Footer>
           </Card>
         </div>
-        <div className="col">
-          <Card className="shadow">
+        <div className="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+          <Card
+            className="shadow h-1oo"
+            role="button"
+            onClick={() => onLinkClick(LAND_KEY)}
+          >
             {displayCardImageLoadingSpinner(getLandAsset)}
 
             <Card.Body>
@@ -408,11 +414,7 @@ const PropertyAlbum = () => {
             </Card.Body>
             <Card.Footer>
               <div className="flex-center-general">
-                <div
-                  className="link-general link-size-small px-3 py-2"
-                  role="button"
-                  onClick={() => onLinkClick(LAND_KEY)}
-                >
+                <div className="link-general link-size-small px-3 py-2">
                   Find Lands
                 </div>
               </div>
