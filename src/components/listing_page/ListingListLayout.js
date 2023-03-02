@@ -12,7 +12,7 @@ const ListingListLayout = () => {
           Map View
         </div>
       </div>
-      <div>Map Showup</div>
+      <div>Working on it....</div>
     </div>
   );
 };

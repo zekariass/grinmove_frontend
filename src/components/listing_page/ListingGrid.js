@@ -7,7 +7,7 @@ const ListingGrid = ({ publicListings, gridClassName, page }) => {
     <div>
       <div className={gridClassName}>
         {publicListings?.map((listing) => (
-          <div className="col" key={listing.id}>
+          <div className="col-sm-6" key={listing.id}>
             <ListingCard listing={listing} page={page} />
           </div>
         ))}

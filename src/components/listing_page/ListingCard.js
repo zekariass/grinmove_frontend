@@ -8,6 +8,7 @@ import {
 } from "components/commons/functions";
 import {
   CONDOMINIUM_KEY,
+  PATH_AGENT_CONTACT_ABSOLUTE,
   PATH_PUBLIC_LISTING,
   SHARE_HOUSE_KEY,
   VILLA_KEY,
@@ -15,7 +16,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { Card, Carousel } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import SaveAndShareBox from "./public_listing_detail/SaveAndShareBox";
 
 const ListingCard = ({ listing, page }) => {
@@ -51,9 +52,9 @@ const ListingCard = ({ listing, page }) => {
   };
 
   return (
-    <div className="">
+    <div className="h-100">
       <Card
-        className="card-border-radius shadow"
+        className="card-border-radius shadow h-100"
         role="button"
         // onClick={onListingCardClick}
       >
@@ -90,27 +91,35 @@ const ListingCard = ({ listing, page }) => {
             </Carousel.Item>
           ))}
         </Carousel>
-        <Card.Body onClick={onListingCardClick} style={{lineHeight:"1rem"}}>
+        <Card.Body onClick={onListingCardClick} style={{ lineHeight: "1rem" }}>
           <Card.Text className="fw-bold">
             {getFullAddress(listing?.address)}
           </Card.Text>
 
           <div className="row">
             <div className="col-md-6">
-              <Card.Text
-                className="display-title fw-bold "
-              >
+              <Card.Text className="display-title fw-bold ">
                 {propertyCategoryData?.name}
               </Card.Text>
               <Card.Text className="fw-bold">
                 <>
-                  <span className="fs-4">{listing?.property_price}{" "}</span>
+                  <span className="fs-4">{listing?.property_price} </span>
                   {getCurrencyName(currencies, listing?.listing_currency)}/
                   {getPeriodicityName(periodicities, listing?.listing_term)}
                 </>
               </Card.Text>
             </div>
-            <div className="col-md-6 input-border-color py-1">
+            <div
+              className="col-md-6 input-border-color py-1 mt-3 mt-md-0"
+              onClick={(e) => {
+                e.stopPropagation();
+                // console.log("listing: ", listing);
+                navigate(PATH_AGENT_CONTACT_ABSOLUTE, true, {
+                  agentData: listing?.agent,
+                  listingData: listing,
+                });
+              }}
+            >
               <Card.Text className="">{listing?.agent?.name} </Card.Text>
 
               <Card.Text className="mb-1">

@@ -177,6 +177,7 @@ import ContactAgent from "./listing_page/ContactAgent";
 import ListingImageView from "./listing_page/public_listing_detail/ListingImageView";
 import ListingVideoView from "./listing_page/public_listing_detail/ListingVideoView";
 import About from "./commons/About";
+import ScrollToTopAfterLoad from "ScrollToTopAfterLoad";
 
 const App = () => {
   const isSignedIn = useSelector((store) => store.user.signin.isSignedIn);
@@ -211,6 +212,8 @@ const App = () => {
 
   return (
     <BrowserRouter>
+      <ScrollToTopAfterLoad />
+
       <Routes>
         <Route path={PATH_SIGNUP} element={<Signup />} />
         <Route

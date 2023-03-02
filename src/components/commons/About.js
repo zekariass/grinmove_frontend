@@ -30,6 +30,10 @@ const About = () => {
                   <div className="row about-list">
                     <div className="col-md-6">
                       <div className="media">
+                        <label>Name</label>
+                        <p>Zekarias Semegnew Negese</p>
+                      </div>
+                      <div className="media">
                         <label>Birthday</label>
                         <p>22nd October 1990</p>
                       </div>
