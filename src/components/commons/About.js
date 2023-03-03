@@ -1,7 +1,7 @@
 import FooterTwo from "components/footers/FooterTwo";
 import HeaderOne from "components/headers/HeaderOne";
 import "./About.css";
-import Zekarias from "./images/Zekarias.png";
+import Zekarias from "./images/Zekarias.jpg";
 import React from "react";
 
 const About = () => {
@@ -10,7 +10,7 @@ const About = () => {
       <HeaderOne />
       <div className="container">
         <section className="section about-section gray-bg" id="about">
-          <div className="container">
+          <div className="container about-page">
             <div className="row align-items-center flex-row-reverse">
               <div className="col-lg-6">
                 <div className="about-text go-to">
@@ -78,6 +78,26 @@ const About = () => {
                   />
                 </div>
               </div>
+            </div>
+            <div className="jumbotron-general p-3 mt-4 rounded-3 fst-italic">
+              <h4 className="m-0px font-w-600 theme-color lead">
+                <span>
+                  <i className="ui exclamation triangle icon "></i>
+                </span>
+                This website is under development...
+              </h4>
+              <p className="">
+                The website is an online platform for renting and selling
+                different immovable properties, such as Apartments/Flats, Villa
+                Houses, Venues, Commercial properties, Lands, etc. For
+                development, I have used
+                <mark> React + Djangorestframework + Postgresql</mark> stack.
+                Currently, the Frontend is hosted in Google Firebase, and the
+                Backend is hosted in Pythonanywhere hosting on the cloud. The
+                database is served by Pythonanywhere cloud database service
+                while for storage purpose I have used Azure Blob Storage
+                service.
+              </p>
             </div>
             {/* <div className="counter">
               <div className="row">

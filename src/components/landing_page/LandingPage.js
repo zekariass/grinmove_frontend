@@ -35,13 +35,13 @@ const LandingPage = () => {
 
       {/* Search area part */}
 
-      <div className="slidder-bg flex-center-general">
+      <div className="slidder-bg flex-center-general" id="slidder">
         <SearchArea />
       </div>
 
       {/* Self advertisement part */}
 
-      <div className="container p-3  rounded-3 mt-5 shadow-sm card bg-dark" >
+      <div className="container p-3  rounded-3 mt-5 shadow-sm card bg-dark">
         <p className="fs-5 self-ad-jumbo-txt flex-center-general ">
           List your property and reach millions. No extra effort to sale or rent
           your property

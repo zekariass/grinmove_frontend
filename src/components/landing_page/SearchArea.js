@@ -76,12 +76,12 @@ const SearchArea = () => {
   };
 
   return (
-    <div>
+    <div className="searchArea">
       <Form onSubmit={onSubmit}>
         {({ handleSubmit }) => (
           <form onSubmit={handleSubmit}>
             <div className="search-area my-4">
-              <p className="fs-5 fw-bold py-3 flex-center-general text-light">
+              <p className="fs-auto fw-bold py-3 flex-center-general text-light">
                 Search Your Dream Properties
               </p>
 
