@@ -19,6 +19,12 @@
   }
 }
 
+@media screen and (max-height: 650px) {
+  .slidder-bg {
+    min-height: 550px;
+  }
+}
+
 /* SEARCH PROPERTY AREA */
 
 @media screen and (min-width: 768px) {
