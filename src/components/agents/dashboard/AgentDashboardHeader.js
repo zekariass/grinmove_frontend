@@ -5,16 +5,25 @@ import {
   PATH_LANDING,
 } from "components/commons/Strings";
 import { setListingKey } from "features/listing/listingSlice";
+import { signOut } from "features/user/userSlice";
 import React from "react";
 import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const AgentDashboardHeader = () => {
+  const navigate = useNavigate();
+
   const dispatch = useDispatch();
 
   const setListingKeyValue = () => {
     dispatch(setListingKey("byAgent"));
   };
+
+  const handleSignout = () => {
+    dispatch(signOut());
+    navigate(PATH_LANDING, { replace: true }); // Go to landing page after signout
+  };
+
   return (
     <div className="sticky-top">
       <header className="navbar navbar-dark bg-light flex-md-nowrap p-2 shadow-sm">
@@ -66,7 +75,11 @@ const AgentDashboardHeader = () => {
         </div>
         <div className="navbar-nav">
           <div className="nav-item text-nowrap">
-            <Link className="link-general link-size-small nav-link px-3" to="#">
+            <Link
+              className="link-general link-size-small nav-link px-3"
+              to=""
+              onClick={() => handleSignout()}
+            >
               Sign out
             </Link>
           </div>
