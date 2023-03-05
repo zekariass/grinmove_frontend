@@ -34,14 +34,6 @@ const About = () => {
                         <p>Zekarias Semegnew Negese</p>
                       </div>
                       <div className="media">
-                        <label>Birthday</label>
-                        <p>22nd October 1990</p>
-                      </div>
-                      <div className="media">
-                        <label>Age</label>
-                        <p>32 Yrs</p>
-                      </div>
-                      <div className="media">
                         <label>Residence</label>
                         <p>United Kingdom</p>
                       </div>
@@ -97,6 +89,10 @@ const About = () => {
                 database is served by Pythonanywhere cloud database service
                 while for storage purpose I have used Azure Blob Storage
                 service.
+              </p>
+              <p>
+                I am applying the CI/CD (Continuous Integration / Continuous
+                Delivery) practice of continuous software development
               </p>
             </div>
             {/* <div className="counter">

@@ -144,7 +144,7 @@ const AgentDashboardSidebar = () => {
             <span data-feather="plus-circle"></span>
           </Link>
         </h6>
-        <ul className="nav flex-column mb-2">
+        {/* <ul className="nav flex-column mb-2">
           <li className="nav-item">
             <Link
               className="link-general link-size-xsmall nav-link"
@@ -166,13 +166,8 @@ const AgentDashboardSidebar = () => {
               Expired Listings
             </Link>
           </li>
-          <li className="nav-item">
-            <Link className="link-general link-size-xsmall nav-link" to="#">
-              <span data-feather="file-text"></span>
-              Year-end sale
-            </Link>
-          </li>
-        </ul>
+          
+        </ul> */}
       </div>
     </nav>
   );
