@@ -83,7 +83,7 @@ const HeaderOne = () => {
   const userDropDownItems = () => {
     return (
       <>
-        <NavDropdown.Item>
+        {/* <NavDropdown.Item>
           <NavLink to="" className="link-general link-size-small">
             Notifications
           </NavLink>
@@ -98,7 +98,7 @@ const HeaderOne = () => {
             Something
           </NavLink>
         </NavDropdown.Item>
-        <NavDropdown.Divider />
+        <NavDropdown.Divider /> */}
         <NavDropdown.Item onClick={() => handleSignout()}>
           <NavLink to="" className="link-general link-size-small">
             Signout
@@ -223,11 +223,11 @@ const HeaderOne = () => {
           </NavLink>
         </Nav>
         {getMenuByAuthStatus()}
-        <Nav className="me-5 px-lg-5">
+        {/* <Nav className="me-5 px-lg-5">
           <div className="row row-cols-auto g-2 ps-2">
             <MenuDropdown dropdownItems={languageDropdownItems} title="Lang" />
           </div>
-        </Nav>
+        </Nav> */}
       </Navbar.Collapse>
     </Navbar>
   );

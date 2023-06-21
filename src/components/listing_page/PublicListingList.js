@@ -177,9 +177,9 @@ const PublicListingList = () => {
             </div>
           </div>
 
-          <div className="col-xl-4 d-none d-xl-block">
+          {/* <div className="col-xl-4 d-none d-xl-block">
             <ListingListLayout />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
