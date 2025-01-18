@@ -215,12 +215,12 @@ const HeaderOne = () => {
           >
             Find an Agent
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to={PATH_ABOUT}
             className="link-general link-size-small mx-lg-5"
           >
             About Me
-          </NavLink>
+          </NavLink> */}
         </Nav>
         {getMenuByAuthStatus()}
         {/* <Nav className="me-5 px-lg-5">

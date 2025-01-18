@@ -119,7 +119,7 @@ const SearchArea = () => {
                 <div className="col form-outline mb-2">
                   <TextField
                     name="location"
-                    className="form-control form-control-lg input-border-color"
+                    className="form-control input-border-color"
                     type="text"
                     placeholder="Enter Region, City, Sub-City, etc"
                     label="Keyword"
@@ -132,7 +132,7 @@ const SearchArea = () => {
                 <div className="col">
                   <DropdownField
                     name="property_category"
-                    className="form-control form-control-lg input-border-color"
+                    className="form-select input-border-color"
                     label="Property Category"
                     labelClass="form-label fs-5 mt-2 text-light"
                     options={[

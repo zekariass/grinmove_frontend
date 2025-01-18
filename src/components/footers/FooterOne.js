@@ -72,7 +72,7 @@ const FooterOne = () => {
     <div>
       <div className="container">
         <footer className="py-5">
-          <div className="row row-cols-1 row-cols-sm-1 row-cols-lg-4 g-5">
+          <div className="row row-cols-1 row-cols-sm-1 row-cols-lg-4 g-5 justify-content-around">
             <div className="col">
               <ul className="nav flex-column d-flex align-items-center align-items-md-start">
                 <h5>Properties</h5>
@@ -281,9 +281,9 @@ const FooterOne = () => {
                     Find an Agent
                   </Link>
                 </li>
-                <li className="nav-item mb-2">
+                {/* <li className="nav-item mb-2">
                   <Link to="/" className="footer-link p-0 text-muted">
-                    Jobs
+                    Careers
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
@@ -315,11 +315,11 @@ const FooterOne = () => {
                   <Link to="/" className="footer-link p-0 text-muted">
                     Cookie policy
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 
-            <div className="col">
+            {/* <div className="col">
               <form className="subscribe-area">
                 <h5>Subscribe to our newsletter</h5>
                 <p>Monthly digest of whats new and exciting from us.</p>
@@ -335,14 +335,14 @@ const FooterOne = () => {
                   </button>
                 </div>
               </form>
-            </div>
+            </div> */}
           </div>
 
-          <div className="row row-cols-auto d-flex justify-content-between py-4 my-4 border-top ">
+          <div className="row row-cols-auto d-flex justify-content-center py-4 my-4 border-top ">
             <p className="col flex-center-general">
               &copy; 2022 {COMPANY_NAME}, Inc. All rights reserved.
             </p>
-            <div className="col flex-center-general">
+            {/* <div className="col flex-center-general">
               <h5>Follow us on:</h5>
               <ul className="list-unstyled d-flex row row-cols-auto ">
                 <li className="ms-3 col">
@@ -361,8 +361,8 @@ const FooterOne = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
-            <div className="col mt-3 mt-lg-0">
+            </div> */}
+            {/* <div className="col mt-3 mt-lg-0">
               <div className="row row-cols-1 g-3">
                 <div className="col flex-center-general">
                   <Link className="link-dark" to="/">
@@ -383,7 +383,7 @@ const FooterOne = () => {
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </footer>
       </div>

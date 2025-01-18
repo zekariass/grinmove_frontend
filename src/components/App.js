@@ -13,7 +13,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import ProtectedRoute from "./commons/ProtectedRoute";
 import {
-  PATH_ABOUT,
+  // PATH_ABOUT,
   PATH_ADD_PROPERTY,
   PATH_AGENTS_ADD,
   PATH_AGENTS_HOME,
@@ -177,7 +177,7 @@ import FeatureListing from "./agents/dashboard/listings/FeatureListing";
 import ContactAgent from "./listing_page/ContactAgent";
 import ListingImageView from "./listing_page/public_listing_detail/ListingImageView";
 import ListingVideoView from "./listing_page/public_listing_detail/ListingVideoView";
-import About from "./commons/About";
+// import About from "./commons/About";
 import ScrollToTopAfterLoad from "ScrollToTopAfterLoad";
 
 const App = () => {
@@ -557,7 +557,7 @@ const App = () => {
             element={<PropertyFileUpload />}
           />
         </Route>
-        <Route path={PATH_ABOUT} element={<About />} />
+        {/* <Route path={PATH_ABOUT} element={<About />} /> */}
       </Routes>
     </BrowserRouter>
   );

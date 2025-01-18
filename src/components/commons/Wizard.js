@@ -140,7 +140,7 @@ export class Wizard extends Component {
                       <button
                         type="submit"
                         className="btn-general btn-general-hover px-3 py-2"
-                        disabled={submitting}
+                        // disabled={submitting}
                       >
                         Submit
                       </button>
