@@ -1,22 +1,18 @@
-# Created by https://www.toptal.com/developers/gitignore/api/react
+# Frontend of Grinmove property listing website
 
-# Edit at https://www.toptal.com/developers/gitignore?templates=react
+![Landing](imgs/landing.JPG)
 
-### react
+This is the Frontend part of the Grinmove online property listing website. The frontend uses APIs developed using Axios which sends request and recieves responses to/from the backend developed
+with Django Rest Framework. The frontend GUI is developed with JavaScript, React and Bootstrap.
 
-.DS\_\*
-_.log
-logs
-\*\*/_.backup._
-\*\*/_.back.\*
+# Languages and Frameworks Used
 
-node_modules
-bower_components
+- JavaScript
+- React
+- Bootstrap
 
-_.sublime_
+## Website [Link Here](https://grinmovefrontend.web.app/)
 
-psd
-thumb
-sketch
+![Landing](imgs/landing2.JPG)
 
-# End of https://www.toptal.com/developers/gitignore/api/react
+![Landing](imgs/listing.JPG)
